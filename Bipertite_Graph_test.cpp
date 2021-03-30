@@ -32,7 +32,7 @@ class Graph
 };
 int main()
 {
-    Graph g1,g2;
+    Graph g1,g2,g3;
     g1.add_edge(1,2);
     g1.add_edge(1,6);
     g1.add_edge(6,5);
@@ -47,4 +47,8 @@ int main()
     g2.add_edge(2,4);
     g2.add_edge(4,5);
     cout<<endl<<g2.bipertite(1,0);
+
+    g3.add_edge(0,3);
+    g3.add_edge(2,3);
+    cout<<g3.bipertite(0,0);
 }
